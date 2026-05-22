@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simuladores Matemáticos Web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Simuladores Interactivos</h1>
+    <p>Transferencia de calor y combinaciones complejas</p>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>1. Transferencia de Calor</h2>
+
+      <form id="formCalor">
+        <label for="t0">Temperatura inicial T0</label>
+        <input type="number" id="t0" value="120" required>
+
+        <label for="ts">Temperatura del entorno Ts</label>
+        <input type="number" id="ts" value="38" required>
+
+        <label for="k">Constante k</label>
+        <input type="number" id="k" value="0.45" step="0.01" required>
+
+        <label for="tiempo">Tiempo en horas</label>
+        <input type="number" id="tiempo" value="3" min="0" required>
+
+        <button type="button" onclick="calcularCalor()">Calcular temperatura</button>
+      </form>
+
+      <div class="resultado" id="resultadoCalor">
+        Resultado pendiente...
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2. Combinaciones Complejas</h2>
+
+      <form id="formCombinaciones">
+        <h3>Grupo 1</h3>
+
+        <label for="n1">n1</label>
+        <input type="number" id="n1" value="59" min="0" required>
+
+        <label for="r1">r1</label>
+        <input type="number" id="r1" value="5" min="0" required>
+
+        <h3>Grupo 2</h3>
+
+        <label for="n2">n2</label>
+        <input type="number" id="n2" value="35" min="0" required>
+
+        <label for="r2">r2</label>
+        <input type="number" id="r2" value="1" min="0" required>
+
+        <button type="button" onclick="calcularCombinaciones()">Calcular combinaciones</button>
+      </form>
+
+      <div class="resultado" id="resultadoCombinaciones">
+        Resultado pendiente...
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Desafío técnico de programación web</p>
+  </footer>
+
+  <script src="js/script1.js"></script>
+</body>
+</html>
